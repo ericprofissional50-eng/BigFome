@@ -112,7 +112,7 @@ while (continuar === 'S') {
 
     continuar = readlineSync.question(
         'Deseja mais alguma coisa? (S/N): '
-    ).toUpperCase();
+    )
 }
 
 console.log('\nRESUMO DA COMPRA');
@@ -132,4 +132,4 @@ for (let i = 0; i < carrinho.length; i++) {
     total = total + carrinho[i][2];
 }
 
-console.log('VALOR FINAL: R$', total.toFixed(2));
+console.log('VALOR FINAL: R$')
