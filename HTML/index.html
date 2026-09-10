@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- TÍTULO -->
+
+    <div class="retangulo-topo">
+        <h1>CARDÁPIO</h1>
+    </div>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <div class="conteudo-principal">
+
+        <!-- PRODUTOS -->
+
+        <div class="produtos">
+
+            <div class="container">
+
+                <div class="produto">
+                    <img class="item"
+                        src="../IMG/Untitled (200 x 200 px) (1).png"
+                        alt="Hambúrguer">
+
+                    <button onclick="adicionarPedido('Hambúrguer', 26.99)">
+                        Adicionar - R$ 26,99
+                    </button>
+                </div>
+
+
+                <div class="produto">
+                    <img class="item"
+                        src="../IMG/Untitled (200 x 200 px).png"
+                        alt="Cheeseburguer">
+
+                    <button onclick="adicionarPedido('Cheeseburguer', 18.06)">
+                        Adicionar - R$ 18,06
+                    </button>
+                </div>
+
+
+                <div class="produto">
+                    <img class="item"
+                        src="../IMG/Untitled (200 x 200 px) (2).png"
+                        alt="Sorvete">
+
+                    <button onclick="adicionarPedido('Sorvete', 25.00)">
+                        Adicionar - R$ 25,00
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="container">
+
+                <div class="produto">
+                    <img class="item"
+                        src="../IMG/Untitled (200 x 200 px) (3).png"
+                        alt="Sanduíche natural">
+
+                    <button onclick="adicionarPedido('Sanduíche natural', 38.99)">
+                        Adicionar - R$ 38,99
+                    </button>
+                </div>
+
+
+                <div class="produto">
+                    <img class="item"
+                        src="../IMG/Untitled (200 x 200 px) (4).png"
+                        alt="Cachorro-quente">
+
+                    <button onclick="adicionarPedido('Cachorro-quente', 18.05)">
+                        Adicionar - R$ 18,05
+                    </button>
+                </div>
+
+
+                <div class="produto">
+                    <img class="item"
+                        src="../IMG/Untitled (200 x 200 px) (5).png"
+                        alt="Refrigerante">
+
+                    <button onclick="adicionarPedido('Refrigerante', 9.05)">
+                        Adicionar - R$ 09,05
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="container">
+
+                <div class="produto">
+                    <img class="item"
+                        src="../IMG/Untitled (200 x 200 px) (6).png"
+                        alt="Suco natural">
+
+                    <button onclick="adicionarPedido('Suco natural', 15.05)">
+                        Adicionar - R$ 15,05
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENU DO PEDIDO -->
+
+        <div class="menu-pedido">
+
+            <h2>Seu pedido</h2>
+
+            <div id="pedido"></div>
+
+            <div class="total-pedido">
+                Total: R$ <span id="total">0,00</span>
+            </div>
+
+            <button class="botao-finalizar"
+                onclick="finalizarPedido()">
+
+                Finalizar pedido
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../JS/script.js"></script>
+
+</body>
+
+</html>
+
+
+
